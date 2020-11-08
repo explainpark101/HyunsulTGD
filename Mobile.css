@@ -1,0 +1,412 @@
+/* font */
+@font-face {
+    font-family: 'Dovemayo-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/Dovemayo-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+            
+/* 배경색 */
+html, body{
+ background: linear-gradient(#fff3f9,#ffa9d3);
+ height: auto;
+}
+
+/* 트게더 로고 변경 */
+header>#header-area>a>h1 {
+    background: url(https://cdn.discordapp.com/attachments/750346501871632385/751742282578788352/mobile.png) no-repeat;
+  }
+/* 상단 헤더 (배너) */
+header {
+    border-bottom: 4px solid #7f00ff;
+    background: #fff3f9;
+}
+
+/*즐겨찾기 인원표시안함*/
+#board-info>a.board-right-menu>small{display:none;}
+
+
+/* 접속자수 표시 */
+#board-info #viewers-area .fa-user:before {
+    content: url(https://static-cdn.jtvnw.net/badges/v1/ff4a94b6-8499-4032-a529-b36a1530316c/1);
+    font-size: 16px;
+    position: relative;
+    top: 5px;
+}
+
+#board-info #viewers-area #viewers:after {
+    content: "개의 콩들이 기다리는 중!";
+    cursor: text;
+}
+
+/**** 카테고리 ****/
+/* 카테고리 이름 */
+#article-list #article-list-category>a {
+    text-shadow: 0px 0px 2px hotpink; /* 그림자 생성 */
+}
+#article-list #article-list-category{
+    background: #e3e2f3;
+    border-bottom:2px solid #7f00ff;
+        }
+#article-list #article-list-category>a{
+    background: #e3e2f3 !important;
+        }
+
+/****** 게시글 설정 ******/
+/* 게시글 선택란 밑바탕 색(배경색 드러내기) */
+#article-list>.article-list-row{
+    background: none;
+}
+
+
+/**** 공지사항 ****/
+#article-list>.article-list-row.notice{
+    background-color:  #e3e2f3;
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
+#article-list>.article-list-row>.item>.list-checkbox, #article-list>.article-list-row>.item>.list-header, #article-list>.article-list-row>.item>.list-category, #article-list>.article-list-row>.item>.list-title, #article-list>.article-list-row>.item>.list-blocked, #article-list>.article-list-row>.item>.list-time{
+    border-bottom:none;
+}
+
+span.a-badge i.fa.fa-info-circle{
+    color: #d3ceb8;
+}
+
+
+
+/**** 인기글 ****/
+#article-list>.article-list-row.hot{
+            background-color: transparent;
+            border-radius: 10px;
+        }
+span.a-badge i.fa.fa-star{
+            color: white;
+            animation: animationFrames ease-in-out 2s infinite;
+          -webkit-animation: animationFrames ease-in-out 2s infinite;
+          -moz-animation: animationFrames ease-in-out 2s infinite;
+          -o-animation: animationFrames ease-in-out 2s infinite;
+          -ms-animation: animationFrames ease-in-out 2s infinite;
+        }
+
+
+/*인기글 버튼 설정 */
+#article-list #article-list-menu>.btn.best { /*인기글 버튼 기본 */
+            background: white;
+            border-radius: 10px;
+            border-width:2px;
+        }
+
+#article-list-menu>.btn.best.enable {
+            color: #fff;
+            background: #efc839 !important;
+            border-color: #efc839;
+        }
+
+
+
+
+/**** 기본글 ****/
+#article-list>.article-list-row{
+     border: none;
+     }
+
+#article-list>.article-list-row>.item>.list-title>.list-category{
+            border: none;
+        }
+/* 게시글 제목 색상 */
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span{
+            color: black;
+        }
+
+        /* 게시글 추천수 */
+#article-list>.article-list-row>.item>.list-header>span{
+            background-color: rgba(212, 0, 255, 0.589);
+            color:rgb(255, 255, 255);
+            padding: 3px 5px 3px 5px;
+            border-radius: 50%;
+        }
+
+
+#article-list>.article-list-row>.item>.list-header.v0>span{
+            background: none;
+        }
+
+/* 댓글 개수 색 */
+#article-list>.article-list-row>.item>a.list-title>small.comment-count{
+            color: rgb(255, 166, 0);
+        }
+
+/* 작성자 이름 색 변화 */
+#article-list>.article-list-row>.item>a.list-title>.list-writer.logged>span{
+            color: #f56ad0;
+        }
+
+#article-list>.article-list-row>.item>a.list-title:visited /*읽은 글 색상 변화 */{
+            color: purple !important;
+        }
+
+
+/* 글쓰기 라디오스 */ /* 글쓰기 버튼 */
+#article-list-menu>.btn.write {
+  border-radius: 10px;
+  background-color: hotpink;
+  border-color: hotpink;
+  border-width:2px;
+  border-radius: 10px;
+}
+
+#article-list-menu>.btn.write:hover {
+  border-radius: 10px;
+  color:#000;
+  background-color: #fff;
+  border-color: #feb3cf;
+  border-radius: 10px;
+  transition:0.2s;
+}
+
+/* 글 페이지 숫자 */
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+    background-color: #be14be;
+    border-color: #be14be;
+    border-radius: 2px;
+}
+
+/* 스트리머 추천 */
+/* .fa-heart:before {
+             content: url(https://dandegimon.github.io/yanggether/images/heart.gif);
+            position: relative;
+            top: -2px;
+            display: inline-block;
+        } */
+
+i.fa.fa-heart:before {
+  color:rgb(255, 255, 255);
+  animation: heartAnimation 1s infinite;
+  -webkit-animation: heartAnimation  1s infinite;
+  -moz-animation: heartAnimation  1s infinite;
+  -o-animation: heartAnimation  1s infinite;
+  -ms-animation: heartAnimation 1s infinite;
+}
+
+
+/****밑바탕****/
+/* 트게더 홍보 광고바 */
+#header-top-notice {
+    background: transparent;
+}
+#header-top-notice strong.notice-badge {
+    display:none;
+}
+
+/* 스트리머 정보탭 */
+#board-info {
+    background:transparent;
+}
+#board-info #viewers-area, #board-info #score-area {
+    color: rgba(10,59,84);
+}
+
+/* 아래쪽 */
+.pagination-area {
+    background-color: transparent !important;
+    background:transparent !important;
+}
+
+#article-list-menu{
+    background: transparent;
+}
+
+footer{
+    background: none;
+        }
+
+/* 글 안 쪽 */
+.frame {
+    padding: 1em;
+    background: rgb(255,255,255,0.1);
+    border-top: 1px solid #e1e1e1;
+}
+a.custom-badge-link {
+    border: 4px solid transparent;
+}
+/* 글 안 쪽 글쓰기 버튼 */
+button#article-write-button.btn.btn-primary.pull-right{
+	  border-radius: 10px;
+  background-color: hotpink;
+  border-color: hotpink;
+  border-width:2px;
+  border-radius: 10px;
+ }
+
+
+/* 글쓰기 내용 틀 상단 보더 */
+div#fr-toolbar.fr-ltr.fr-mobile.fr-top.fr-basic.fr-sticky-off{
+    border-top: 5px solid hotpink !important;
+}
+
+
+/* 드롭다운 메뉴 애니메이션 */
+
+nav#nav > #nav-upper #userDropdown #notification-badge {
+    border-radius: 100px;
+    padding: 3px 6px;
+    background: hotpink;
+}
+nav#nav > #nav-upper #userDropdown img.profile-img {
+    width: 24px;
+    height: 24px;
+    border-radius:50%
+}
+nav#nav>.nav-header {
+            background: pink;
+            color:black;
+        }
+nav#nav.hide{
+            transition: all 0.35s ease-in-out !important;
+         }
+nav#nav {
+            background: #fff;
+            transition: all 0.35s ease-in-out !important;
+            transition: all 0.3s cubic-bezier(0.165, 1.44, 0.44, 1)
+            }
+
+.dropdown > .dropdown-menu {
+                display: block !important;
+                transition: all 0.3s cubic-bezier(0.165, 1.44, 0.44, 1);
+                transform-origin: top;
+                transform: scale(0);
+             }
+
+.dropdown.open > .dropdown-menu {
+                transform: unset;
+                }
+
+
+/*애니메이션*/
+@keyframes animationFrames{
+          0% {
+            opacity:1;
+          }
+          50% {
+            opacity:0;
+          }
+          100% {
+            opacity:1;
+          }
+        }
+@-moz-keyframes animationFrames{
+          0% {
+            opacity:1;
+          }
+          50% {
+            opacity:0;
+          }
+          100% {
+            opacity:1;
+          }
+        }
+@-webkit-keyframes animationFrames {
+          0% {
+            opacity:1;
+          }
+          50% {
+            opacity:0;
+          }
+          100% {
+            opacity:1;
+          }
+        }
+@-o-keyframes animationFrames {
+          0% {
+            opacity:1;
+          }
+          50% {
+            opacity:0;
+          }
+          100% {
+            opacity:1;
+          }
+        }
+@-ms-keyframes animationFrames {
+          0% {
+            opacity:1;
+          }
+          50% {
+            opacity:0;
+          }
+          100% {
+            opacity:1;
+          }
+        }
+/* 애니메이션 2 */
+        @keyframes heartAnimation{
+          0% {
+            width:110%;
+            height:110%;
+          }
+          50% {
+            width:100%;
+            height:110%;
+          }
+          100% {
+            width:110%;
+            height:110%;
+          }
+        }
+@-moz-keyframes heartAnimation{
+  0% {
+    width:110%;
+    height:110%;
+  }
+  50% {
+    width:100%;
+    height:110%;
+  }
+  100% {
+    width:110%;
+    height:110%;
+  }
+}
+@-webkit-keyframes heartAnimation {
+  0% {
+    width:110%;
+    height:110%;
+  }
+  50% {
+    width:100%;
+    height:110%;
+  }
+  100% {
+    width:110%;
+    height:110%;
+  }
+}
+@-o-keyframes heartAnimation{
+  0% {
+    width:110%;
+    height:110%;
+  }
+  50% {
+    width:100%;
+    height:110%;
+  }
+  100% {
+    width:110%;
+    height:110%;
+  }
+}
+@-ms-keyframes heartAnimation {
+  0% {
+    width:110%;
+    height:110%;
+  }
+  50% {
+    width:100%;
+    height:110%;
+  }
+  100% {
+    width:110%;
+    height:110%;
+  }
+}
