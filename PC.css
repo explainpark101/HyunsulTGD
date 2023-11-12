@@ -59,6 +59,10 @@ header #right-search-form>#right-search-btn {
   color: #a6a291;
 }
 
+/* 현설님 프로필 이미지 복구 */
+[src="https://static-cdn.jtvnw.net/jtv_user_pictures/4de754a7-2972-4a53-bb71-f9a97f28fbc8-profile_image-300x300.png"] {
+	content: url(https://static-cdn.jtvnw.net/jtv_user_pictures/7078a5fc-1083-429e-b131-5317f6d039c1-profile_image-300x300.png);
+}
 /* 유저 프로필 이미지 원형화 */
 header #header-bar #header-menu-right #userDropdown img.profile-img {
     border-radius: 50%;
